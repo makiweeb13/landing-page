@@ -159,14 +159,15 @@ li {
 
 footer {
     background-color: #000000;
-    padding: 10px;
+    padding: 20px;
     color: #fff;
+    font-size: 12px;
 }
 
 footer > ul {
     display: flex;
     flex-direction: row;
-    font-size: 18px;
+    font-size: 15px;
     justify-content: flex-end;
 }
 
@@ -182,6 +183,7 @@ footer > span {
     display: flex;
     justify-content: flex-end;
     margin-top: 5px;
+    padding: 0 5px;
 }
 
 @media screen and (max-width: 1500px) {
