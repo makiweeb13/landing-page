@@ -9,23 +9,17 @@
 }
 
 body {
-    background: url(./images/acoustic-guitar-close-up-beautiful-colored-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #f2eddc;
+    background-color: #f9f4e3;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
     top: 0;
     min-height: 50px;
-    padding: 10px 58px;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    background-color: #000000;
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
-    color: #fff;
+    color: #444444;
     width: 100%;
 }
 
@@ -35,7 +29,7 @@ h1 {
 }
 
 h2 {
-    color: #dbdbdb;
+    color: #4f4f4f;
     font-size: 1.9rem;
 }
 
@@ -58,7 +52,7 @@ li {
 
 .navbar {
     position: absolute;
-    right: 20px;
+    right: 40px;
 }
 
 .navbar ul {
@@ -71,36 +65,54 @@ li {
 }
 
 .navbar ul li {
-    margin: 8px;
+    margin: 10px 20px;
 }
 
 .main-section {
     text-align: center;
-    height: 75vh;
-    line-height: 3;
+    height: 70vh;
+    line-height: 2;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    padding: 0 40px;
+    color: #000000;
+    font-size: 30px;
+    padding: 0 50px;
+}
+
+.guitar img {
+    width: 110%;
+}
+
+.contact {
+    width: 40%;
+    text-align: left;
 }
 
 .input-email {
-    padding: 8px 150px 8px 20px;
+    padding: 10px 150px 10px 20px;
     margin-top: 19px;
-    background: rgba(255, 255, 255, 0.94)
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #c1c1c1;
 }
 
 .form {
     margin-top: 14px;
-    padding: 5px 15px;
+    padding: 12px 30px;
     font-size: 17px;
     cursor: pointer;
     font-weight: 548;
-    background: rgb(220,160,0);
+    background: #dca000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
 }
 .form:hover {
     transform: scale(1.05);
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 .col {
@@ -108,7 +120,7 @@ li {
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: #dbdbdb;
+    color: #414141;
     font-size: 12px;
     padding: 0 10%;
 }
@@ -148,6 +160,7 @@ li {
     text-align: center;
     width: calc(100% / 4);
     background: rgba(225,225,225,0.8);
+    box-shadow: 0 0 5px rgba(206, 203, 203, 0.5);
     margin: 10px;
     line-height: 37px;
     padding: 20px;
@@ -186,13 +199,13 @@ footer > span {
     padding: 0 5px;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1100px) {
     .col {
-        position: block;
         flex-direction: column;
         align-items: normal;
         font-size: 20px;
         margin: auto 0;
+        text-align: center;
     }
     
     .row img {
@@ -204,6 +217,17 @@ footer > span {
 }
 
 @media screen and (max-width: 764px) {
+    .main-section {
+        flex-direction: column;
+        height: auto;
+        font-size: 25px;
+        padding: 30px 50px;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
     #pricing {
         flex-direction: column;
     }
